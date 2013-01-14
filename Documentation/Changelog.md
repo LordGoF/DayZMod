@@ -1,7 +1,7 @@
 FIX : 09 NOVEMBER 2012
 
 	Community Notes: 
-		* V1.7.4.3
+		* V1.7.4.4
 
 	Community Change log:
 
@@ -21,7 +21,6 @@ FIX : 09 NOVEMBER 2012
 		* [NEW]	Disabled greeting menu .
 		* [NEW]	Disabled radio messages to be heard and shown in the left lower corner of the screen.
 		* [NEW]	General speed up of the login process.
-		* [NEW]	Street Lights now active in towns.
 		* [NEW] (*.2 Hotfix)Added some Anti-cheat.
 		* [NEW] (*.3 Hotfix)Added local copy of cert if it cant get one online, version checks.
 
@@ -55,6 +54,7 @@ FIX : 09 NOVEMBER 2012
 		* [REMOVED] HMMWV_Ambulance_CZ_DES_EP1 Removed due to its heal abilty.
 		* [REMOVED] Dogs Removed while we rewrite the hud and correct a few other issues. (attak, Getin/out of vehicles)
 		* [REMOVED] UH60M_MEV_EP1 Removed due to its heal abilty.
+		* [REMOVED]	(*.4 Hotfix) Street Lights now active in towns.
 
 
     Upstream hive (public hive):
