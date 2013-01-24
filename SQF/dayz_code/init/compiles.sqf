@@ -185,31 +185,6 @@ if (!isDedicated) then {
 		_success
 	};
 	
-	dayz_disableRespawn = {
-		private["_display","_btnRespawn"];
-		if(r_fracture_legs) exitWith {};
-		disableSerialization;
-		waitUntil {
-			_display = findDisplay 49;
-			!isNull _display;
-		};
-		_btnRespawn = _display displayCtrl 1010;
-		_btnRespawn ctrlEnable false;
-	};
-	
-	dayz_disableAbort = {
-		private["_display","_btnAbort","_combattimeout"];
-		_combattimeout = player getVariable["combattimeout",0];
-		if(_combattimeout < time) exitWith {};
-		disableSerialization;
-		waitUntil {
-			_display = findDisplay 49;
-			!isNull _display;
-		};
-		_btnAbort = _display displayCtrl 104;
-		_btnAbort ctrlEnable false;
-	};
-	
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
@@ -243,11 +218,6 @@ if (!isDedicated) then {
 			call dayz_forceSave;
 		};
 		*/
-		if (_dikCode in actionKeys "IngamePause") then {
-			call dayz_forceSave;
-			_id = [] spawn dayz_disableRespawn;
-			_id = [] spawn dayz_disableAbort;
-		};
 		_handled
 	};
 	
